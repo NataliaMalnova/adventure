@@ -1,0 +1,26 @@
+.tag {
+  border: 1px solid var(--color-greyLine);
+  border-radius: 100px;
+  padding: 13px 16px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--color-greyLine);
+  @include media-breakpoint-up(md) {
+    padding: 12px;
+    font-size: 18px;
+  }
+  @include media-breakpoint-up(tb) {
+    padding: 13px 16px;
+    font-size: 20px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 13px 16px;
+    font-size: 24px;
+  }
+
+  &:hover {
+    background: #fff;
+  }
+}

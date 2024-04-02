@@ -1,0 +1,82 @@
+{{> _structure/head
+    title="Промокоды lamoda на март 2024"
+    keywords="Промокоды lamoda на март 2024"
+    description="Промокоды lamoda на март 2024"
+}}
+
+{{> _layout/header/header}}
+<main class="pages-main">
+
+    <div class="container mt-6 pt-1 pt-sm-3 mt-md-6">
+        <h1 class="font-bold">Промокоды lamoda на март 2024</h1>
+        <div class="main-grid mt-md-3">
+            <div class="main-view mt-3 mt-md-0">
+                {{> promocodes/promocodes}}
+                <div class="main-block">
+                    <h2>Истекшие промокоды</h2>
+                    <div class="mt-3 pt-2">
+                        {{> promocodes/card-promocode discont="10%" title="Промокод 10% на женские товары" hint="CODE" past=true }}
+                    </div>
+                    <div class="mt-3">
+                        {{> promocodes/card-promocode discont="20%" title="Промокод 20% на женские товары" hint="CODE" past=true }}
+                    </div>
+                    <div class="mt-3">
+                        {{> promocodes/card-promocode discont="15%" title="Промокод 15% на женские товары" hint="CODE" past=true }}
+                    </div>
+                </div>
+                <div class="main-block">
+                    <h2>Похожие купоны</h2>
+                    <div class="mt-3 pt-2">
+                        {{> promocodes/card-promocode images="./assets/img/promocode/asos.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали"}}
+                    </div>
+                    <div class="mt-3">
+                        {{> promocodes/card-promocode images="./assets/img/promocode/lacoste.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали"}}
+                    </div>
+                    <div class="mt-3">
+                        {{> promocodes/card-promocode images="./assets/img/promocode/befree.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали"}}
+                    </div>
+                </div>
+                <div class="coupons main-block">
+                    <h2>Популярные купоны Lamoda</h2>
+                    <div class="mt-3 pt-1">
+                        {{> coupons/coupons}}
+                    </div>
+                </div>
+                <div class="faq">
+                    <h2>F.A.Q</h2>
+                    <div class="mt-1">
+                        {{> faq/faq}}
+                    </div>
+                </div>
+                <div class="catalog">
+                    <h2>Каталог интернет-магазина</h2>
+                    <p>В ассортимент Lamoda представлена женская и мужская одежда, аксессуары. Верхняя и повседневная
+                        одежда стиля casual,спортивного направления и денимом. Женские и мужские костюмы для офиса,
+                        нижние и спальное белье, одежда для пляжа. Так же представлены наряды для особых случаев. </p>
+                </div>
+                <div class="payment">
+                    <h2>Оплата и получение заказа</h2>
+                    <p>Чтобы совершить покупку на Lamoda необходимо зарегистрироваться на сайте и создать бесплатный аккаунт.
+                        Правильно выбрать вещи поможет таблица размеров, оценить их стоимость - настройка валют. Экспресс
+                        доставка товаров производится курьерской службой, либо почтой и занимает до 4 рабочих дней. Отслеживать
+                        статус заказа удобно через Личный кабинет.</p>
+                </div>
+
+
+            </div>
+            {{> sidebar/sidebar-top}}
+            {{> sidebar/sidebar-bottom}}
+        </div>
+    </div>
+
+    {{> app-overlay/overlay}}
+    {{> app-overlay/overlay-discount}}
+    {{> app-overlay/overlay-menu}}
+    {{> breadcrumbs/breadcrumbs}}
+</main>
+
+{{> _layout/footer/footer}}
+
+
+
+{{> _structure/script }}

@@ -1,0 +1,260 @@
+.promocode-card {
+  border-radius: 20px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  min-height: 140px;
+  padding: 16px 16px 0 16px;
+  cursor: pointer;
+  border: 1px solid var(--color-greyBorder);
+  @include media-breakpoint-up(md) {
+    padding: 16px 24px 0 24px;
+  }
+  @include media-breakpoint-up(tb) {
+     padding: 16px 32px 0 32px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 16px 48px 0 48px;
+  }
+  &:hover {
+    border: 1px solid var(--color-redLight);
+  }
+  &__top {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-greyBorder);
+    @include media-breakpoint-down(md) {
+      padding-bottom: 8px;
+    }
+  }
+  &__button {
+    width: 212px;
+  }
+
+  p.promocode-card__title {
+    font-size: 16px;
+    font-weight: $font-weight-demi;
+    @include media-breakpoint-up(sm) {
+      font-size: 18px;
+    }
+    @include media-breakpoint-up(tb) {
+      font-size: 24px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 32px;
+    }
+  }
+
+  &__users {
+    color: var(--color-secondary);
+    margin-top: 8px;
+    svg {
+      fill: var(--color-secondary);
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &__hint {
+    background: var(--color-greyHint);
+    border-radius: 50px;
+    color: #000000;
+    width: max-content;
+    font-weight: $font-weight-medium;
+    padding: 4px 8px;
+    margin-bottom: 16px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__discont,
+  &__promo,
+  &__promotion {
+    font-weight: $font-weight-bold;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--color-redText);
+    border-radius: 5px;
+    border: 1px solid var(--color-redText);
+    width: 94px;
+    height: 72px;
+    margin-right: 8px;
+
+    @include media-breakpoint-up(md) {
+      width: 100px;
+      height: 90px;
+      font-size: 42px;
+      line-height: 58px;
+      margin-right: 32px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 120px;
+      height: 96px;
+      font-size: 48px;
+      line-height: 58px;
+      margin-right: 40px;
+    }
+  }
+
+  &__promo,
+  &__promotion {
+    font-size: 16px;
+    border: 1px solid #F9F9F9;
+    @include media-breakpoint-up(md) {
+      font-size: 16px;
+      border: 1px solid #B7B7B7;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+    }
+  }
+
+  &__promotion {
+    @include media-breakpoint-up(md) {
+      font-size: 24px;
+    }
+  }
+
+  &__images {
+    width: 89px;
+    height: 40px;
+    margin-right: 8px;
+    @include media-breakpoint-up(md) {
+      width: 100px;
+      height: 55px;
+      margin-right: 24px;
+    }
+    @include media-breakpoint-up(tb) {
+      width: 160px;
+      height: 70px;
+      margin-left: -8px;
+    }
+    @include media-breakpoint-up(lg) {
+       width: 175px;
+       height: 80px;
+       margin-left: -24px;
+       margin-right: 32px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__detail {
+    &-top {
+      padding-top: 8px;
+      padding-bottom: 16px;
+      @include media-breakpoint-down(md) {
+        padding-top: 4px;
+        padding-bottom: 8px;
+      }
+    }
+   .show-more {
+     p {
+       @include media-breakpoint-down(md) {
+         color: var(--color-grey);
+       }
+       svg {
+         width: 16px;
+         height: 16px;
+         fill: var(--color-secondary);
+         margin-right: 8px;
+       }
+     }
+     p:first-child {
+       @include media-breakpoint-down(md) {
+         color:  var(--color-secondary);
+       }
+     }
+   }
+  }
+}
+
+.promocode-card__stock {
+  .promocode-card__discont  {
+    border: 1px solid var(--color-redLight);
+    color: var(--color-redLight);
+  }
+}
+.promocode-card__past {
+  .promocode-card__discont, .promocode-card__promo, .promocode-card__promotion {
+    color: #2D2D2D;
+    border: 1px solid var(--color-greyBorder2);
+  }
+}
+.promocode-card__small {
+  padding: 16px 16px 0 16px;
+  @include media-breakpoint-up(md) {
+    padding: 16px 24px 0 24px;
+  }
+  p.promocode-card__title {
+    font-size: 24px;
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+    }
+  }
+  .promocode-card__images {
+    width: 89px;
+    height: 30px;
+    margin-left: 0;
+    margin-right: 8px;
+    @include media-breakpoint-up(sm) {
+      width: 110px;
+      height: 40px;
+      margin-right: 16px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 150px;
+      height: 40px;
+      margin-right: 24px;
+    }
+  }
+}
+
+.show-more {
+  max-height: 0;
+  -moz-transition: max-height 0.6s ease;
+  -webkit-transition: max-height 0.6s ease;
+  -o-transition: max-height 0.6s ease;
+  transition: max-height 0.6s ease;
+  overflow: hidden;
+}
+
+.promocode-card.shop-card {
+  padding: 12px;
+  border: none;
+
+  @include media-breakpoint-up(sm) {
+    padding: 32px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 65px 50px;
+  }
+
+  &:hover {
+    p {
+      text-decoration: underline;
+    }
+  }
+
+  .promocode-card__title {
+    @include media-breakpoint-only(tb) {
+      min-height: 72px;
+    }
+  }
+
+  .shop-card__image {
+    height: 50px;
+
+    @include media-breakpoint-only(md) {
+      min-height: 70px;
+    }
+
+    @include media-breakpoint-only(tb) {
+      min-height: 90px;
+    }
+  }
+}
+@import "./filter.scss";

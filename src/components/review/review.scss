@@ -1,0 +1,34 @@
+.review-like,
+.review-dislike{
+  cursor: pointer;
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-secondary);
+  }
+  p {
+    color: var(--color-secondary);
+    margin-left: 8px;
+  }
+}
+
+.review-dislike {
+  margin-left: 16px;
+  svg {
+    transform: rotate(180deg);
+  }
+}
+
+.review-like:hover,
+.review-like.active {
+  svg {
+    fill: var(--color-green);
+  }
+}
+
+.review-dislike:hover,
+.review-dislike.active {
+  svg  {
+    fill: var(--color-error);
+  }
+}

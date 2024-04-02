@@ -1,0 +1,107 @@
+.faq {
+  margin-top: 144px;
+  @include media-breakpoint-down(md) {
+    margin-top: 80px;
+  }
+}
+
+.accordion-row:not(.open) .accordion-content {
+  max-height: 0;
+}
+
+.accordion-content {
+  background-color: white;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-row {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  margin-top: 16px;
+  @include media-breakpoint-up(md) {
+    margin-top: 24px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-top: 32px;
+  }
+}
+
+.accordion-title {
+  padding: 16px;
+  @include media-breakpoint-up(md) {
+    padding: 24px;
+  }
+  @include media-breakpoint-up(tb) {
+    padding: 32px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 40px 40px 40px 40px;
+  }
+  @include media-breakpoint-up(xl) {
+    padding: 40px 76px 40px 40px;
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: $font-weight-medium;
+    @include media-breakpoint-up(md) {
+      font-size: 22px;
+    }
+    @include media-breakpoint-up(tb) {
+      font-size: 28px;
+    }
+    @include media-breakpoint-up(lg) {
+      font-size: 35px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 40px;
+    }
+  }
+}
+
+.accordion-icon {
+  background: var(--color-redLight);
+  border-radius: 50%;
+  padding: 5px;
+  @include media-breakpoint-up(tb) {
+    padding: 13px;
+  }
+  svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    transition: .4s;
+    @include media-breakpoint-up(md) {
+      width: 30px;
+      height: 30px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 37px;
+      height: 37px;
+    }
+  }
+}
+
+.accordion-content-padding {
+  padding: 12px;
+  @include media-breakpoint-up(md) {
+    padding: 16px 32px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 8px 40px 60px 40px;
+  }
+  p, ul, a, li {
+    font-weight: $font-weight-medium;
+    font-size: 16px;
+  }
+  ul, ol {
+    padding-left: 20px;
+  }
+}
+
+.accordion-row.open {
+  .accordion-icon svg {
+    transform: rotate(135deg);
+  }
+}

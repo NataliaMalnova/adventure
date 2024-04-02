@@ -1,0 +1,50 @@
+.stars {
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--color-greyBorder2);
+    @include media-breakpoint-up(md) {
+      width: 22px;
+      height: 22px;
+    }
+    @include media-breakpoint-up(tb) {
+      width: 28px;
+      height: 28px;
+    }
+    @include media-breakpoint-up(xl) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  p {
+    font-size: 18px;
+    @include media-breakpoint-up(tb) {
+      font-size: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 24px;
+    }
+  }
+}
+
+.star {
+  margin-right: 8px;
+  @include media-breakpoint-up(tb) {
+    margin-right: 16px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-right: 24px;
+  }
+  &-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    svg {
+      fill: var(--color-yellowStar);
+    }
+  }
+  &:last-child {
+    margin-right: 16px;
+  }
+}

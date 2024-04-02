@@ -1,0 +1,75 @@
+{{> _structure/head
+    title="Страница магазина"
+    keywords="Страница магазина"
+    description="Страница магазина"
+}}
+
+{{> _layout/header/header}}
+<main class="pages-shop">
+    <div class="container">
+        <div class="mt-3 mt-md-4 pt-md-4">
+             {{> slider/slider}}
+        </div>
+        <div class="block-shop">
+            <h2>Лучшие промокоды</h2>
+            <div class="block-shop__best row mt-1 mt-md-6">
+                <div class="col-12 col-tb-6 mt-2 mt-md-4">
+                    {{> promocodes/card-promocode images="./assets/img/promocode/asos.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали" small=true}}
+                </div>
+                <div class="col-12 col-tb-6 mt-2 mt-md-4">
+                    {{> promocodes/card-promocode images="./assets/img/promocode/asos.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали" small=true}}
+                </div>
+                <div class="col-12 col-tb-6 mt-2 mt-md-4">
+                    {{> promocodes/card-promocode images="./assets/img/promocode/befree.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали" small=true}}
+                </div>
+                <div class="col-12 col-tb-6 mt-2 mt-md-4">
+                    {{> promocodes/card-promocode images="./assets/img/promocode/befree.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали" small=true}}
+                </div>
+                <div class="col-12 col-tb-6 mt-2 mt-md-4">
+                    {{> promocodes/card-promocode images="./assets/img/promocode/asos.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали" small=true}}
+                </div>
+                <div class="col-12 col-tb-6 mt-2 mt-md-4">
+                    {{> promocodes/card-promocode images="./assets/img/promocode/asos.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали" small=true}}
+                </div>
+                <div class="col-12 col-tb-6 mt-2 mt-md-4">
+                    {{> promocodes/card-promocode images="./assets/img/promocode/befree.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали" small=true}}
+                </div>
+                <div class="col-12 col-tb-6 mt-2 mt-md-4">
+                    {{> promocodes/card-promocode images="./assets/img/promocode/befree.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали" small=true}}
+                </div>
+                <div class="col-12 col-tb-6 mt-2 mt-md-4">
+                    {{> promocodes/card-promocode images="./assets/img/promocode/asos.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали" small=true}}
+                </div>
+                <div class="col-12 col-tb-6 mt-2 mt-md-4">
+                    {{> promocodes/card-promocode images="./assets/img/promocode/asos.svg" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали" small=true}}
+                </div>
+            </div>
+            <div class="mt-6 pt-1 d-flex justify-content-center w-100">
+                <a href="" class="btn btn-orange-link d-flex align-items-center">
+                    Еще промокоды
+                    <svg class="">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/img/icon/icons.svg#icon-arr"></use>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="block-shop__all">
+            <h2>Все магазины</h2>
+            {{> shops/shop-link}}
+            <div class="mt-md-4 pt-md-2">
+                {{> shops/shop-list}}
+            </div>
+        </div>
+    </div>
+    {{> app-overlay/overlay}}
+    {{> app-overlay/overlay-discount}}
+    {{> app-overlay/overlay-menu}}
+</main>
+
+{{> _layout/footer/footer}}
+
+
+
+{{> _structure/script }}

@@ -1,0 +1,41 @@
+$font-primary: 'Montserrat', sans-serif;
+
+$font-weight: 400;
+$font-weight-light: 300;
+$font-weight-medium: 500;
+$font-weight-demi: 600;
+$font-weight-bold: bold;
+
+$font-style: normal;
+
+$spacers: (
+        0: 0,
+        1: 8px,
+        2: 16px,
+        3: 24px,
+        4: 32px,
+        6: 40px
+);
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 768px,
+        md: 991px,
+        tb: 1280px,
+        lg: 1440px,
+        xl: 1920px
+);
+
+$container-max-widths: (
+        sm: 864px,
+        md: 940px,
+        tb: 1232px,
+        lg: 1392px,
+        xl: 1712px,
+);
+
+$grid-column: (2, 4, 6, 12);
+
+$grid-gutter-width: 16px;
+
+

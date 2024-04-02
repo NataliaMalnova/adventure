@@ -1,0 +1,32 @@
+<div class="promocodes w-100 js--filter">
+    <div class="d-flex justify-content-between">
+        <div class="promocodes-filter d-flex">
+            <p class="active d-flex justify-content-center js--filter-btn p-1 mb-0 me-md-3" data-filter="all">Все <span>7</span></p>
+            <p class="d-flex justify-content-center js--filter-btn p-1 mb-0 me-md-3" data-filter="promo">Промокоды <span>4</span></p>
+            <p class="d-flex justify-content-center js--filter-btn p-1 mb-md-0" data-filter="stock">Акции <span>3</span></p>
+        </div>
+    </div>
+    <div class="promocodes-wrap">
+        <div class="promocodes-row mt-2 mt-sm-3 js--filter-content" data-filter="promo">
+            {{> promocodes/card-promocode discont="12%" title="Промокод 12% на женские товары" hint="CODE" users="900 человек ипсользовали"}}
+        </div>
+        <div class="promocodes-row mt-2 mt-sm-3 js--filter-content" data-filter="promo">
+            {{> promocodes/card-promocode discont="15%" title="Промокод 15$ на женские товары" hint="CODE" users="900 человек ипсользовали" }}
+        </div>
+        <div class="promocodes-row mt-2 mt-sm-3 js--filter-content" data-filter="promo">
+            {{> promocodes/card-promocode promo=true title="Промокод на женские товары" hint="CODE" users="900 человек ипсользовали" }}
+        </div>
+        <div class="promocodes-row mt-2 mt-sm-3 js--filter-content" data-filter="stock">
+            {{> promocodes/card-promocode discont="30$" title="Cкидка 30$ на женские товары" hint="SALE" users="900 человек ипсользовали" stock=true }}
+        </div>
+        <div class="promocodes-row mt-2 mt-sm-3 js--filter-content" data-filter="stock">
+            {{> promocodes/card-promocode discont="20%" title="20% кэшбека на все женские товары" hint="CASHBACK" users="900 человек ипсользовали" stock=true }}
+        </div>
+        <div class="promocodes-row mt-2 mt-sm-3 js--filter-content" data-filter="stock">
+            {{> promocodes/card-promocode promotion=true title="Cкидка на женские товары" hint="SALE" users="900 человек ипсользовали" stock=true }}
+        </div>
+        <div class="promocodes-row mt-2 mt-sm-3 js--filter-content" data-filter="promo">
+            {{> promocodes/card-promocode discont="30$" title="Промокод 30$ на женские товары" hint="CODE" users="900 человек ипсользовали"}}
+        </div>
+    </div>
+</div>

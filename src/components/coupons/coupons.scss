@@ -1,0 +1,91 @@
+.coupons {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  padding: 40px 40px 64px 40px;
+  @include media-breakpoint-down(tb) {
+    padding: 24px 24px 40px 24px;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 24px 4px 48px 4px;
+  }
+
+  h2 {
+    font-size: 48px;
+    @include media-breakpoint-down(lg) {
+      font-size: 40px;
+    }
+    @include media-breakpoint-down(tb) {
+      font-size: 32px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+    }
+  }
+}
+.coupons-table {
+  table {
+    border-spacing: 0;
+  }
+
+
+  th + th,
+  td + td {
+    padding-left: 16px;
+    @include media-breakpoint-down(md) {
+      padding-left: 0px;
+    }
+  }
+
+  th, td {
+    @include media-breakpoint-down(md) {
+      width: calc(100% / 3);
+    }
+  }
+  td p {
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+    }
+  }
+  .coupons-table__title th {
+    text-align: left;
+    font-size: 24px;
+    font-weight: $font-weight-demi;
+    @include media-breakpoint-down(lg) {
+      font-size: 20px;
+    }
+    @include media-breakpoint-down(tb) {
+      font-size: 18px;
+    }
+    @include media-breakpoint-down(md) {
+      font-size: 16px;
+    }
+  }
+
+  &--col:nth-child(1) {
+    width: 20%;
+
+  }
+
+  &--col:nth-child(2) {
+    //width: 50%;
+
+  }
+
+  &--col:nth-child(3) {
+    width: 25%;
+  }
+  .coupons-table__content {
+    .promo {
+      color: var(--color-promo);
+      font-weight: $font-weight-demi;
+    }
+    .stock {
+      color: var(--color-orangeDark);
+      font-weight: $font-weight-demi;
+    }
+  }
+  tbody tr td {
+    padding-top: 24px;
+  }
+}

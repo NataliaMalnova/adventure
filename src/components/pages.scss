@@ -1,0 +1,71 @@
+.catalog,
+.payment {
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  padding: 40px 40px 115px 40px;
+  margin-top: 144px;
+  @include media-breakpoint-down(md) {
+    margin-top: 64px;
+    padding: 32px 6px 62px 16px;
+  }
+
+  p {
+    max-width: 871px;
+    font-size: 16px;
+  }
+
+  h2 {
+    margin-bottom: 32px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 24px;
+      font-size: 18px;
+    }
+  }
+}
+
+.payment {
+  margin-top: 64px;
+  @include media-breakpoint-down(md) {
+    margin-top: 32px;
+  }
+}
+.look-more {
+  .show-more--btn{
+    cursor: pointer;
+  }
+  .content-to-hide {
+    transition: max-height 0.4s ease;
+    overflow: hidden;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+  .content-to-hide p {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+  }
+}
+.look-more:not(.active) > div:nth-child(1).content-to-hide {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.pages-main {
+  h1 {
+    @include media-breakpoint-down(md) {
+      margin-left: 128px;
+      min-height: 82px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.main-block {
+  margin-top: 96px;
+  @include media-breakpoint-down(md) {
+    margin-top: 64px;
+  }
+}

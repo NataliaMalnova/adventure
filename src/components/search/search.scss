@@ -1,0 +1,133 @@
+.search-input {
+  width: 100%;
+  z-index: 6;
+  &__icon {
+    position: absolute;
+    right: 16px;
+    z-index: 3;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    stroke: var(--color-grey);
+    @include media-breakpoint-up(tb) {
+      right: 48px;
+    }
+    @include media-breakpoint-down(md) {
+      right: auto;
+      left: 16px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  input {
+    height: 56px;
+    padding: 0 48px 0 16px;
+    width: 100%;
+    z-index: 3;
+    position: relative;
+    outline: 1px solid #FFE0DA;
+
+    @include media-breakpoint-up(tb) {
+      padding: 0 72px 0 16px;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 0 16px 0 40px;
+      border-radius: 20px;
+    }
+    &:focus {
+      outline: 1px solid var(--color-redLight)
+    }
+  }
+}
+
+.input-datalist__list {
+  background: #FFFFFF;
+  box-shadow: 0 4px 50px rgba(165, 165, 165, 0.7);
+  border-radius: 0 0 10px 10px;
+  list-style-type: none;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  width: calc(100% - 1px);
+  padding-top: 20px;
+  top: calc(100% - 20px);
+
+  li {
+    padding: 18px 16px;
+    font-weight: $font-weight;
+
+    &:hover {
+      background: var(--color-redLight);
+      color: #fff;
+    }
+  }
+}
+
+.search-result {
+  flex-direction: column;
+  padding: 10px 0;
+  max-height: calc(100vh - 200px);
+  overflow: auto;
+  display: none;
+
+  &.open {
+    display: flex;
+  }
+}
+
+.search-result-item {
+  display: flex;
+  padding: 12px 24px;
+  align-items: center;
+
+  img {
+    max-width: 100px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+.header-search {
+  .search-input {
+    width: 100%;
+
+    @include media-breakpoint-up(sm) {
+      width: 400px;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 350px;
+    }
+
+    @include media-breakpoint-up(tb) {
+      width: 480px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 580px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 774px;
+    }
+    @include media-breakpoint-down(md) {
+      height: 40px;
+    }
+    input {
+      @include media-breakpoint-down(md) {
+        height: 40px;
+      }
+    }
+  }
+}
+
+.footer-search {
+  .input-datalist__list {
+    top: auto;
+    bottom: calc(100% - 20px);
+    border-radius: 10px 10px 0 0;
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+}

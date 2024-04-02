@@ -1,0 +1,126 @@
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: rgba(191, 195, 205, 0.7);
+  z-index: -1;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.3s;
+
+  &-wrap {
+    width: 100%;
+    max-width: 727px;
+    max-height: 100%;
+    background: #ffffff;
+    overflow: auto;
+    transition: 0.3s;
+    position: relative;
+    padding: 56px 75px;
+    min-height: 473px;
+
+    @include media-breakpoint-down(sm) {
+      height: 100%;
+      width: 100%;
+      padding: 56px 20px;
+      min-height: auto
+    }
+  }
+
+  &-close {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 24px;
+    height: 24px;
+    fill: var(--color-primary-text);
+
+    @include media-breakpoint-up(sm) {
+      right: 24px;
+      top: 24px;
+    }
+  }
+  h2 {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: $font-weight-demi;
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+      max-width: 220px;
+    }
+  }
+  p {
+    color: var(--color-secondary);
+  }
+
+  .input-wrapper {
+    border: 1px solid var(--color-orange);
+    width: 100%;
+    max-width: 388px;
+    border-radius: 10px;
+    overflow: hidden;
+    @include media-breakpoint-down(sm) {
+      max-width: 273px;
+    }
+    input {
+      background: #FFFFFF;
+      padding: 14px;
+      width: calc(100% - 133px);
+      color: var(--color-orange);
+      text-align: center;
+      font-weight: $font-weight-medium;
+      font-size: 16px;
+      @include media-breakpoint-down(sm) {
+        padding: 14px 6px;
+      }
+    }
+    .btn {
+      width: 133px;
+    }
+  }
+  .btn {
+    font-size: 16px;
+  }
+  .overlay-review {
+    margin-top: 72px;
+    @include media-breakpoint-down(sm) {
+      margin-top: 56px;
+    }
+    p {
+      font-size: 16px;
+      font-weight: $font-weight-medium;
+    }
+  }
+  .overlay-clock {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    fill: var(--color-secondary);
+  }
+}
+
+.overlay-show {
+  opacity: 1;
+  z-index: 999;
+
+  .overlay-wrap {
+    margin-right: 0;
+  }
+
+}
+
+
+.overlay-menu {
+  h2 {
+    font-size: 16px;
+    margin-top: 40px;
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+    }
+  }
+  .overlay-wrap__content {
+
+  }
+}

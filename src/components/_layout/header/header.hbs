@@ -1,0 +1,30 @@
+<header class="w-100">
+    <div class="container">
+        <div class="d-flex flex-md-row-reverse justify-content-between align-items-center h-100">
+            <nav class="d-flex align-items-center">
+                <div class="d-none d-md-flex">
+                    <a href="" class="btn btn-transparent me-1 me-tb-3">Войти</a>
+                    <button class="btn btn-border">Зарегистрироваться</button>
+                </div>
+                <svg class="d-md-none header-search--mobile js--search-mobile">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/img/icon/icons.svg#icon-search"></use>
+                </svg>
+                <svg class="d-none d-md-none svg-block header-search--mobile js--search-mobile-close">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/img/icon/icons.svg#icon-close"></use>
+                </svg>
+            </nav>
+            <div class="d-none d-md-block header-search js--search">
+                {{> search/search}}
+            </div>
+            <a href="/" class="header-logo">
+                <svg class="">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="./assets/img/icon/icons.svg#icon-logo"></use>
+                </svg>
+            </a>
+            <div class="d-md-none header-burger d-flex align-items-center justify-content-center flex-shrink" data-show-modal="overlay-menu">
+                {{> burger/burger}}
+            </div>
+        </div>
+
+    </div>
+</header>
